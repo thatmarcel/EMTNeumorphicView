@@ -12,7 +12,7 @@ import UIKit
  `EMTNeumorphicView` is a subclass of UIView and it provides some Neumorphism style design.
  Access neumorphicLayer. Change effects via its properties.
  */
-public class EMTNeumorphicView: UIView, EMTNeumorphicElementProtocol {
+open class EMTNeumorphicView: UIView, EMTNeumorphicElementProtocol {
     /// Change effects via its properties.
     public var neumorphicLayer: EMTNeumorphicLayer? {
         return layer as? EMTNeumorphicLayer
@@ -30,7 +30,7 @@ public class EMTNeumorphicView: UIView, EMTNeumorphicElementProtocol {
  `EMTNeumorphicButton` is a subclass of UIView and it provides some Neumorphism style design.
  Access neumorphicLayer. Change effects via its properties.
  */
-public class EMTNeumorphicButton: UIButton, EMTNeumorphicElementProtocol {
+open class EMTNeumorphicButton: UIButton, EMTNeumorphicElementProtocol {
     /// Change effects via its properties.
     public var neumorphicLayer: EMTNeumorphicLayer? {
         return layer as? EMTNeumorphicLayer
@@ -62,7 +62,7 @@ public class EMTNeumorphicButton: UIButton, EMTNeumorphicElementProtocol {
  `EMTNeumorphicTableCell` is a subclass of UITableViewCell and it provides some Neumorphism style design.
  Access neumorphicLayer. Change effects via its properties.
  */
-public class EMTNeumorphicTableCell: UITableViewCell, EMTNeumorphicElementProtocol {
+open class EMTNeumorphicTableCell: UITableViewCell, EMTNeumorphicElementProtocol {
 
     override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
